@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LKHomeModuleCategory_Example' do
+  pod 'LKHomeModuleCategory', :path => '../'
+
+  target 'LKHomeModuleCategory_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
